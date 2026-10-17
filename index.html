@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Manuela de Britto</title>
+  <meta name="description" content="Portfólio de Manuela de Britto: artes, design gráfico e criação web.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Cinzel:wght@400;600;700&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cursor gráfico (só aparece em computador com mouse) -->
+  <div class="cursor" aria-hidden="true"></div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="topo" id="topo">
+    <div class="wrap topo__linha">
+      <a href="#inicio" class="logo" aria-label="M.Britto, voltar ao início">
+        <span class="logo__m">M</span><span class="logo__ponto">.</span><span class="logo__nome">Britto</span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="menu" id="menu" aria-label="Seções do portfólio">
+        <a href="#artes" class="menu__link">Artes</a>
+        <a href="#design" class="menu__link">Design Gráfico</a>
+        <a href="#web" class="menu__link">Criação web</a>
+        <a href="#sobre" class="menu__link">Sobre mim</a>
+        <a href="#contato" class="menu__link">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="inicio">
+      <canvas class="hero__tinta" data-paint="hero" aria-hidden="true"></canvas>
+      <div class="hero__veu" aria-hidden="true"></div>
+
+      <div class="wrap hero__conteudo">
+        <p class="hero__pre">Artes por</p>
+        <h1 class="hero__nome split">Manuela de Britto</h1>
+        <p class="hero__sub">
+          <span>Artista visual</span>
+          <span class="hero__sep" aria-hidden="true">✶</span>
+          <span>Designer gráfica</span>
+          <span class="hero__sep" aria-hidden="true">✶</span>
+          <span>Front-end</span>
+        </p>
+        <a href="#artes" class="hero__desce">Ver trabalhos <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <!-- Faixa amarela em movimento -->
+    <div class="faixa" aria-hidden="true">
+      <div class="faixa__trilho">
+        <span>Pintura</span><b>✶</b><span>Acrílica</span><b>✶</b><span>Arte Digital</span><b>✶</b><span>Logotipos</span><b>✶</b><span>Identidade visual</span><b>✶</b><span>HTML · CSS · JS</span><b>✶</b>
+        <span>Pintura</span><b>✶</b><span>Acrílica</span><b>✶</b><span>Arte Digital</span><b>✶</b><span>Logotipos</span><b>✶</b><span>Identidade visual</span><b>✶</b><span>HTML · CSS · JS</span><b>✶</b>
+      </div>
+    </div>
+
+    <!-- ===================== ARTES ===================== -->
+    <section class="secao" id="artes">
+      <div class="wrap">
+        <header class="secao__cabeca">
+          <canvas class="pincelada" data-paint="pincelada" data-seed="11" aria-hidden="true"></canvas>
+          <p class="sobretitulo">Criações</p>
+          <h2 class="titulo">Artes</h2>
+          <p class="secao__intro">
+            Algumas das minhas obras físicas feitas à mão: tinta, papel e tecido. Cada peça começa num caderno
+            de esboços e termina na tela, no tecido ou na mesa de alguém.
+          </p>
+        </header>
+
+        <!-- Competências artesanais (também funcionam como filtro) -->
+        <div class="filtros" role="group" aria-label="Filtrar obras por técnica">
+          <button class="chip ativo" data-filtro="todas">Todas</button>
+          <button class="chip" data-filtro="pintura">Pintura acrílica</button>
+          <button class="chip" data-filtro="grafite">Grafite</button>
+          <button class="chip" data-filtro="customizacao">Customização</button>
+        </div>
+
+        <div class="obras">
+          <figure class="obra obra--alta" data-cat="pintura">
+            <div class="obra__img"><img src="fotos/sansao.jpeg"></div>
+            <figcaption>
+              <span class="obra__titulo">Obra Expressionista "The Blinded Samson - Lovis Conrinth" - 1912</span>
+              <span class="obra__ficha">Reprodução - Acrílica sobre tela · 40 × 50 cm · 2024</span>
+            </figcaption>
+          </figure>
+          <figure class="obra obra--alta" data-cat="pintura">
+            <div class="obra__img"><img src="fotos/azul.jpeg"></div>
+            <figcaption>
+              <span class="obra__titulo">Bloqueio Angustiante</span>
+              <span class="obra__ficha">Autoral - Acrílica sobre tela · 40 × 50 cm · 2025</span>
+            </figcaption>
+          </figure>
+           <figure class="obra" data-cat="pintura">
+            <div class="obra__img"><img src="fotos/esqueleto2.jpeg"></div>
+            <figcaption>
+              <span class="obra__titulo">A Cigarette Before Christmas.</span>
+              <span class="obra__ficha">Releitura - Acrílica em papel 300 g · A4 · 2023</span>
+            </figcaption>
+          </figure>
+          <figure class="obra" data-cat="pintura">
+            <div class="obra__img"><img src="fotos/educar.jpeg"></div>
+            <figcaption>
+              <span class="obra__titulo">Raízes que Educam, Vozes que Resistirão</span>
+              <span class="obra__ficha">Autoral - Acrílica sobre tela · 40 × 50 cm · 2025</span>
+            </figcaption>
+          </figure>
+          
+        </div>
+          <figure class="obra" data-cat="grafite">
+            <div class="obra__img"><img src="fotos/grafite1.jpeg"></div>
+            <figcaption>
+              <span class="obra__titulo">Grafite</span>
+              <span class="obra__ficha"> Retratos e Animais · 2024</span>
+            </figcaption>
+          </figure>
+          
+          <figure class="obra obra--larga" data-cat="customizacao">
+            <div class="obra__img"><img src="fotos/customizacao.jpeg"></canvas></div>
+            <figcaption>
+              <span class="obra__titulo">Tênis personalizado</span>
+              <span class="obra__ficha"> Tintas de tecido · 2025</span>
+            </figcaption>
+          </figure>
+          
+        <aside class="insta" aria-label="Instagram de arte">
+          <div class="insta__texto">
+            <p class="sobretitulo">Bastidores das criações!</p>
+
+            <a class="insta__arroba" href="https://www.instagram.com/shonnei_nii?utm_source=ig_web_button_share_sheet&rpxt=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">@Shonnei_nii</a>
+            <p>Processo, esboços, vídeos de pintura e obras novas. Encomendas abertas pelo direct.</p>
+            <a class="botao" href="https://www.instagram.com/shonnei_nii?utm_source=ig_web_button_share_sheet&rpxt=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">
+              Seguir no Instagram <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <div class="insta__feed" aria-hidden="true">
+            <canvas data-paint="obra" data-seed="101" data-paleta="0"></canvas>
+            <canvas data-paint="obra" data-seed="102" data-paleta="4"></canvas>
+            <canvas data-paint="obra" data-seed="103" data-paleta="2"></canvas>
+            <canvas data-paint="obra" data-seed="104" data-paleta="3"></canvas>
+            <canvas data-paint="obra" data-seed="105" data-paleta="1"></canvas>
+            <canvas data-paint="obra" data-seed="106" data-paleta="0"></canvas>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===================== DESIGN ===================== -->
+    <section class="secao secao--carvao" id="design">
+      <div class="wrap">
+        <header class="secao__cabeca">
+          <canvas class="pincelada" data-paint="pincelada" data-seed="23" aria-hidden="true"></canvas>
+          <p class="sobretitulo">Criações</p>
+          <h2 class="titulo">Design Gráfico</h2>
+          <p class="secao__intro">
+            Logotipos, identidades visuais e peças gráficas. Do rascunho no papel ao vetor final,
+            com paleta, tipografia e regras de uso.
+          </p>
+        </header>
+
+        <!-- TROQUE: as marcas abaixo são feitas em CSS; substitua por imagens dos seus projetos -->
+        <div class="pecas">
+          <article class="peca">
+            <div class="peca__palco palco--creme">
+              <div class="marca-aurora">
+                <span class="marca-aurora__sol" aria-hidden="true"><img src="fotos/grafico1.jpeg"></span>
+                <span class="marca-aurora__nome"></span>
+                <span class="marca-aurora__tag"></span>
+              </div>
+            </div>
+            <div class="peca__info">
+              <h3>CromoSig Manutenções</h3>
+              <p>Logotipo · 2025</p>
+              <ul class="paleta" aria-label="Paleta de cores">
+                <li style="--c:#f36622"></li><li style="--c:#030304"></li><li style="--c:#fffffe"></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="peca">
+            <div class="peca__palco palco--creme">
+              <div class="marca-aurora">
+                <span class="marca-aurora__sol" aria-hidden="true"><img src="fotos/grafico2.jpeg"></span>
+                <span class="marca-aurora__nome"></span>
+                <span class="marca-aurora__tag"></span>
+              </div>
+            </div>
+            <div class="peca__info">
+              <h3>Design e Criação de Mockoups 2D</h3>
+              <p> Identidade visual do zero · 2026</p>
+              <ul class="paleta" aria-label="Paleta de cores">
+                <li style="--c:#fca724"></li><li style="--c:#fff3a5"></li><li style="--c:#fffffe"></li>
+              </ul>
+            </div>
+          </article>
+         <article class="peca">
+            <div class="peca__palco palco--creme">
+              <div class="marca-aurora">
+                <span class="marca-aurora__sol" aria-hidden="true"><img src="fotos/grafico3.jpeg"></span>
+                <span class="marca-aurora__nome"></span>
+                <span class="marca-aurora__tag"></span>
+              </div>
+            </div>
+            <div class="peca__info">
+              <h3>Desenhos Digitais</h3>
+              <p> Logo e identidade · 2025</p>
+              <ul class="paleta" aria-label="Paleta de cores">
+                <li style="--c:#5d0599"></li><li style="--c:#170223"></li><li style="--c:#fffffe"></li>
+              </ul>
+            </div>
+          </article>
+
+           <article class="peca">
+            <div class="peca__palco palco--creme">
+              <div class="marca-aurora">
+                <span class="marca-aurora__sol" aria-hidden="true"><img src="fotos/grafico4.jpeg"></span>
+                <span class="marca-aurora__nome"></span>
+                <span class="marca-aurora__tag"></span>
+              </div>
+            </div>
+            <div class="peca__info">
+              <h3>Materiais de Divulgação</h3>
+              <p>Panfleto e logo · 2024</p>
+              <ul class="paleta" aria-label="Paleta de cores">
+                <li style="--c:#0b0000"></li><li style="--c:#b4802d"></li><li style="--c:#525d27"></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CRIAÇÃO WEB ===================== -->
+    <section class="secao" id="web">
+      <div class="wrap">
+        <header class="secao__cabeca">
+          <canvas class="pincelada" data-paint="pincelada" data-seed="37" aria-hidden="true"></canvas>
+          <p class="sobretitulo">Código</p>
+          <h2 class="titulo">Criação web</h2>
+          <p class="secao__intro">
+           Alguns sites e interfaces front-end desenvolvidos durante o curso na Etec, escritos à mão
+            em HTML, CSS e JavaScript.
+          </p>
+        </header>
+
+        <div class="sites">
+          <article class="site">
+            <div class="navegador" aria-hidden="true">
+              <div class="navegador__barra"><i></i><i></i><i></i><span>brittoarch.com</span></div>
+              <div class="tela tela--loja">
+                <div class="t-nav"></div>
+                <div class="t-hero"></div>
+                <div class="t-grade"><b></b><b></b><b></b></div>
+              </div>
+            </div>
+            <div class="site__info">
+              <h3>Britto Architecture | Arquitetura e Design</h3>
+              <p>Trabalho do primeiro ano de curso. HTML, CSS e JS.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Frameworks</li></ul>
+              <div class="site__links">
+                <a href="https://manuelabritto.github.io/brittoarch/" class="link-marca">Ver site ↗</a>
+                <a href="https://github.com/ManuelaBritto/brittoarch" class="link-marca">Código ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="site">
+            <div class="navegador" aria-hidden="true">
+              <div class="navegador__barra"><i></i><i></i><i></i><span>Azul-em-sintonia.com</span></div>
+              <div class="tela tela--landing">
+                <div class="t-nav"></div>
+                <div class="t-titulo"></div>
+                <div class="t-linha"></div>
+                <div class="t-botao"></div>
+              </div>
+            </div>
+            <div class="site__info">
+              <h3>Sistema de comunicação entre setores</h3>
+              <p>O Azul em Sintonia conecta equipes e mantém passageiros informados durante ocorrências operacionais.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>Responsivo</li><li>JS</li><li>Supabase</li></ul>
+              <div class="site__links">
+                <a href="https://manuelabritto.github.io/azul/" class="link-marca">Ver site ↗</a>
+                <a href="https://github.com/ManuelaBritto/azul" class="link-marca">Código ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="site">
+            <div class="navegador" aria-hidden="true">
+              <div class="navegador__barra"><i></i><i></i><i></i><span>Plannexus.com</span></div>
+              <div class="tela tela--portfolio">
+                <div class="t-nav"></div>
+                <div class="t-tinta"></div>
+                <div class="t-grade"><b></b><b></b></div>
+              </div>
+            </div>
+            <div class="site__info">
+              <h3>TCC ETEC (em produção)</h3>
+              <p>Aplicação de auxílio na organização e gestão para criadores de eventos e festas sociais. (em breve disponível)</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>Js</li><li>Firebase</li></ul>
+              <div class="site__links">
+                <a href="#" class="link-marca">Código ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SOBRE MIM ===================== -->
+    <section class="secao secao--carvao" id="sobre">
+      <div class="wrap">
+        <header class="secao__cabeca">
+          <canvas class="pincelada" data-paint="pincelada" data-seed="51"></canvas>
+          <p class="sobretitulo">Biografia</p>
+          <h2 class="titulo">Sobre mim</h2>
+        </header>
+
+        <div class="sobre">
+          <div class="sobre__foto">
+            <span class="sobre__iniciais"><img src="fotos/manu.jpeg"></span>
+          </div>
+
+          <div class="sobre__texto">
+            <p class="sobre__abre">Oi, eu sou a Manuela de Britto!</p>
+            <p>
+              Pinto desde criança e sempre tive interesse em design e suas diversas áreas.
+              Atualmente estou no último ano do ensino médio integrado com técnico de informática para internet e tive afinidade para tarefas visuais como:
+               criações gráficas, arte digital e Front-end. Com essa minha vontade realizei diversas tarefas do meio e ajudei em eventos e criações de identidade visuais não só escolares
+                mas por fora também em conjunto com artes tradicionais que realizo e divulgo. Hoje divido meu tempo entre auxílio em itens artísticos escolares, pintura, e editor de código.
+            </p>
+            <p>
+              No design gráfico, gosto de marcas com personalidade, que pareçam feitas por gente.
+              No front-end, gosto de páginas que se movem com intenção. Estou aberta a encomendas
+              de arte, projetos de identidade visual e oportunidades de estágio.
+            </p>
+
+            <div class="ferramentas">
+              <div>
+                <h3>Ateliê</h3>
+                <ul><li>Acrílica em Tela</li><li>Tecido e Papel</li><li>Grafite</li><li>Digital</li></ul>
+              </div>
+              <div>
+                <h3>Design</h3>
+                <ul><li>Ilustração</li><li>Photoshop e Adobe</li><li>Figma</li><li>Canva</li></ul>
+              </div>
+              <div>
+                <h3>Web</h3>
+                <ul><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Frameworks</li><li>Git e GitHub</li></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTATO ===================== -->
+    <section class="secao contato" id="contato">
+      <div class="wrap">
+        <header class="secao__cabeca">
+          <canvas class="pincelada" data-paint="pincelada" data-seed="66" aria-hidden="true"></canvas>
+          <p class="sobretitulo">Contato</p>
+          <h2 class="titulo titulo--grande">Vamos criar<br>algo juntos?</h2>
+        </header>
+
+        <!-- TROQUE: e-mail, LinkedIn, Instagram e GitHub -->
+        <ul class="canais">
+          <li class="canal">
+            <span class="canal__rotulo">E-mail</span>
+            <a class="canal__valor" id="email" href="manueladebritto2@outlook.com">manueladebritto2@outlook.com</a>
+            <button class="copiar" id="copiarEmail" type="button">Copiar</button>
+          </li>
+          <li class="canal">
+            <span class="canal__rotulo">LinkedIn</span>
+            <a class="canal__valor" href="linkedin.com/in/manuela-de-britto-câmara-188893283" target="_blank" rel="noopener">in/manuela-de-britto-câmara ↗</a>
+          </li>
+          <li class="canal">
+            <span class="canal__rotulo">Instagram</span>
+            <a class="canal__valor" href="https://www.instagram.com/shonnei_nii?utm_source=ig_web_button_share_sheet&rpxt=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">@Shonnei_nii ↗</a>
+          </li>
+          <li class="canal">
+            <span class="canal__rotulo">GitHub</span>
+            <a class="canal__valor" href="https://github.com/ManuelaBritto" target="_blank" rel="noopener">github.com/ManuelaBritto↗</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="rodape">
+    <div class="wrap rodape__linha">
+      <a href="#inicio" class="logo logo--pequeno" aria-label="Voltar ao início">
+        <span class="logo__m">M</span><span class="logo__ponto">.</span><span class="logo__nome">Britto</span>
+      </a>
+      <p>© <span id="ano">2026</span> Manuela de Britto.</p>
+      <a href="#inicio" class="link-marca">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
